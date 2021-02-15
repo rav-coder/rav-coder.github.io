@@ -2,4 +2,4 @@
 
 Portfolio Build V1
 
-Resume update - February 15,2021 
+Resume update - February 15,2021.
