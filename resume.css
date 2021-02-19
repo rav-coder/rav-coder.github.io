@@ -6,6 +6,43 @@ body {
     text-align: center;
 }
 
+ul.navtab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li.navtab {
+    float: right;
+}
+
+li.navtab a.selected {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 16px 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Newsreader', serif;
+}
+
+li.navtab a:hover {
+    border-bottom: 3px solid rgb(245, 3, 3);
+}
+
+a.selected {
+    border-top: hidden;
+}
+
+#thisnav {
+    background-color: rgb(250, 199, 192);
+}
+
 .heading {
     font-weight: 500;
     font-size: x-large;
@@ -90,7 +127,6 @@ hr.inheading {
 .info#fullname {
     font-weight: 500;
     font-size: 220%;
-    margin-top: 20px;
     margin-bottom: 10px;
 }
 
