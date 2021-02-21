@@ -43,6 +43,7 @@ li a:hover {
     color: rgb(29, 73, 155);
     text-align: center;
     background: -webkit-linear-gradient(rgb(163, 169, 201), rgb(245, 3, 3));
+    background: -webkit-linear-gradient(rgb(190, 87, 87), rgb(2, 13, 34));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -60,8 +61,6 @@ li a:hover {
     font-size: 7.5vw;
     color: rgb(245, 3, 3);
     text-align: center;
-    background: -webkit-linear-gradient(#eee, #333);
-    background: -webkit-linear-gradient(rgb(190, 87, 87), rgb(2, 13, 34));
     background: -webkit-linear-gradient( rgb(63, 119, 172), #c0361e5d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -69,9 +68,8 @@ li a:hover {
 
 #heading4Name {
     font-size: 2.05vw;
-    padding-top: 3vw;
+    padding-top: 2.8vw;
     font-size: 3vw;
-    background: -webkit-linear-gradient( rgb(63, 119, 172), #c0361e5d);
     background: -webkit-linear-gradient(rgb(190, 87, 87), rgb(2, 13, 34));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -101,6 +99,7 @@ li a:hover {
     font-size: 3vw;
     color: rgb(63, 119, 172);
     text-align: center;
+    background-image: linear-gradient(to right, #fff, #f0f6fc);
 }
 
 .rightonscreen {
@@ -115,6 +114,7 @@ li a:hover {
     font-size: 3vw;
     color: rgb(63, 119, 172);
     text-align: center;
+    background-image: linear-gradient(to right, #fff, #f0f6fc);
 }
 
 a:link {
