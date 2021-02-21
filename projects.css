@@ -1,7 +1,7 @@
 body {
     background-color: #fff;
-    background-image: linear-gradient(to right, #fff, #f0f6fc);
     font-family: 'Abril Fatface', cursive, serif;
+    background-image: linear-gradient(to right, #fff, #f0f6fc);
 }
 
 ul {

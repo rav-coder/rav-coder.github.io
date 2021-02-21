@@ -68,7 +68,7 @@ li a:hover {
 
 #heading4Name {
     font-size: 2.05vw;
-    padding-top: 2.8vw;
+    padding-top: 1vw;
     font-size: 3vw;
     background: -webkit-linear-gradient(rgb(190, 87, 87), rgb(2, 13, 34));
     -webkit-background-clip: text;
@@ -117,16 +117,38 @@ li a:hover {
     background-image: linear-gradient(to right, #fff, #f0f6fc);
 }
 
-a:link {
+a.sidebars:link {
     text-decoration: none;
 }
 
-a {
+a.sidebars {
     font-size: 3vw;
     color: rgb(63, 119, 172);
     text-align: center;
 }
 
-a:hover {
+a.sidebars:hover {
     font-size: 4vw;
+}
+
+.sociallinks {
+    text-align: center;
+    margin-top: 1.5vw;
+}
+
+#linkedin:hover {
+    font-size: 1.3vw;
+}
+
+#github:hover {
+    font-size: 1.3vw;
+}
+
+#linkedin {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+#github {
+    color: rgba(0, 0, 0, 0.87);
+    padding-left: 2%;
 }
