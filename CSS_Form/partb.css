@@ -1,0 +1,47 @@
+body {
+    font-family: 'Comfortaa', cursive, serif;
+    color: black;
+    background-color: rgba(240, 248, 255, 0.7);
+    background-image: url(https://www.pixel4k.com/wp-content/uploads/2019/04/peaceful-blur-background-4k_1555207903.jpg);
+    background-blend-mode: lighten;
+    background-size: auto;
+}
+
+.header {
+    margin-left: 3.5%;
+    margin-bottom: 40px;
+}
+
+.textform {
+    margin-left: 5%;
+    font-size: larger;
+}
+
+.divsize {
+    margin-top: 30px;
+}
+
+.inputsize {
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Comfortaa', cursive, serif;
+}
+
+.button#reset {
+    background-color: brown;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}

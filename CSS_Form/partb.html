@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <link href="partb.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Western Columbia Grocers</h1>
+    </div>
+
+    <div class="textform">
+        <!-- <form action="https://localhost/registration.htm" method="POST"></form> -->
+        <form id="registrationform" action="https://localhost/registration.htm" method="GET">
+            <div>
+                <label for="name" class="required">First Name: </label>
+            </div>
+
+            <div>
+                <input type="text" class="name" size="50" maxlength="25" pattern="[a-zA-Z]{1}[a-zA-Z ]{0,24}" placeholder="John" required>
+            </div>
+
+            <div class="divsize"></div>
+
+            <div>
+                <label for="name" class="required">Last Name: </label>
+            </div>
+
+            <div>
+                <input type="text" class="name" size="50" maxlength="25" pattern="[a-zA-Z]{1}[a-zA-Z ]{0,24}" placeholder="Doe" required>
+            </div>
+
+            <div class="divsize"></div>
+
+            <div>
+                <label for="address">Address: </label>
+            </div>
+
+            <div>
+                <input type="text" class="name" size="50" maxlength="50" placeholder="123 Main St.">
+            </div>
+
+            <div class="divsize"></div>
+
+            <div>
+                <label for="tele">Telephone Number: </label>
+            </div>
+
+            <div>
+                <input type="tel" class="name" size="50" pattern="\d{3} \d{3} \d{4}" placeholder=" ### ### ####">
+            </div>
+
+            <div class="divsize"></div>
+
+            <div>
+                <label for="email" class="required">E-mail: </label>
+            </div>
+
+            <div>
+                <input type="email" class="name" size="50" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@domain.net" required>
+            </div>
+
+            <div class="divsize"></div>
+            <div>
+                <label for="date" class="required">Registration Date: </label>
+
+                <input type="date" class="name" size="50" maxlength="50" min="2021-01-29" required>
+            </div>
+
+            <div class="divsize"></div>
+
+            <div>
+                <label for="age">Age: </label>
+                <input type="number" class="name" placeholder="0 - 110" min="0" max="110">
+            </div>
+
+            <div class="divsize"></div>
+
+            <input type="reset" id="reset" class="button" value="Reset">
+            <input type="submit" class="button" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

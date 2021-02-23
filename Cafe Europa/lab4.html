@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cafe Europa</title>
+    <link href="lab4.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="lab4.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <p id="time"> Today is: <span id="date"></span></p>
+    <p class="cafe">☕ Café Europa</p>
+    <!-- <form action="https://localhost/registration.htm" method="POST"></form> -->
+    <form id="onlineorder" action="https://localhost/registration.htm" method="GET">
+        <div>
+            <label for="name">First Name:</label>
+            <input id="fname" type="text" name="FirstName" class="inputbox" maxlength="20" pattern="[a-zA-Z]{0,19}" placeholder="John">
+        </div>
+
+        <div>
+            <label for="name" class="required">Last Name: </label>
+            <input id="lname" type="text" name="LastName" class="inputbox" maxlength="20" pattern="[a-zA-Z]{0,19}" placeholder="Doe" required>
+        </div>
+
+        <div>
+            <label for="tele" class="required">Phone Number: </label>
+            <input id="phone" type="tel" name="Phone#" class="inputbox" pattern="\d{3} \d{3} \d{4}" placeholder=" ### ### ####" required>
+        </div>
+        <br>
+        <div class="printhide">
+            <p class="subhead">Neapolitan Style Pizza</p>
+            <table>
+
+                <tr>
+                    <td><input type="checkbox" name="Margherita" value="12">Margherita: $12.00</td>
+
+                    <td><label for="MargheritaQuantity" name="MargheritaQuantity" class="qpad">Quantity: </label>
+                        <input id="MargheritaQuantity" name="MargheritaQuantity" type="number" placeholder="0" min="0" max="5" value="0"></td>
+
+                    <td>
+                        <figure id="MargheritaSmall" class="rightfig">
+                            <img src="100px/margherita-pizza-500x500.jpg" alt="Margherita">
+                        </figure>
+
+                        <figure id="MargheritaBig" class="hidden">
+                            <img src="400px/margherita-pizza-500x500.jpg" alt="Margherita">
+                        </figure>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="QuattroFormaggi" value="12.5">Quattro Formaggi: $12.50
+                    </td>
+
+
+                    <td>
+                        <label for="QuattroFormaggiQuantity" name="QuattroFormaggiQuantity" class="qpad">Quantity: </label>
+                        <input id="QuattroFormaggiQuantity" name="QuattroFormaggiQuantity" type="number" placeholder="0" min="0" max="5" value="0">
+                    </td>
+
+                    <td>
+                        <figure class="rightfig" id="QuattroSmall">
+                            <img src="100px/Quattro-formaggi-pizza.jpg" alt="QuattroFormaggi">
+                        </figure>
+
+                        <figure id="QuattroBig" class="hidden">
+                            <img src="400px/Quattro-formaggi-pizza.jpg" alt="QuattroFormaggi">
+                        </figure>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Capricciosa" value="13">Capricciosa: $13.00
+                    </td>
+
+                    <td>
+                        <label for="CapricciosaQuantity" class="qpad">Quantity: </label>
+                        <input id="CapricciosaQuantity" name="CapricciosaQuantity" type="number" placeholder="0" min="0" max="5" value="0">
+                    </td>
+
+                    <td>
+                        <figure class="rightfig" id="CapricciosaSmall">
+                            <img src="100px/Pizza_capricciosa.jpg" alt="Capricciosa">
+                        </figure>
+
+                        <figure id="CapricciosaBig" class="hidden">
+                            <img src="400px/Pizza_capricciosa.jpg" alt="Capricciosa">
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="printhide">
+            <p class="subhead">Sandwich Choices</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Schnitzel" value="8.5">Schnitzel: $8.50
+                    </td>
+
+                    <td>
+                        <label for="SchnitzelQuantity" class="qpad">Quantity: </label>
+                        <input id="SchnitzelQuantity" name="SchnitzelQuantity" type="number" placeholder="0" min="0" max="5" value="0">
+                    </td>
+
+                    <td>
+                        <figure class="rightfig" id="SchnitzelSmall">
+                            <img src="100px/schnitzel.jpg" alt="Schnitzel">
+                        </figure>
+
+                        <figure class="hidden" id="SchnitzelBig">
+                            <img src="400px/schnitzel.jpg" alt="Schnitzel">
+                        </figure>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="MixedGrill" value="9.5">Mixed Grill: $9.50
+                    </td>
+
+                    <td>
+                        <label for="MixedGrillQuantity" class="qpad">Quantity: </label>
+                        <input id="MixedGrillQuantity" name="MixedGrillQuantity" type="number" placeholder="0" min="0" max="5" value="0">
+                    </td>
+
+                    <td>
+                        <figure class="rightfig" id="MixedGrillSmall">
+                            <img src="100px/mixedgrill.jpg" alt="Mixed Grill">
+                        </figure>
+
+                        <figure class="hidden" id="MixedGrillBig">
+                            <img src="400px/mixedgrill.jpg" alt="Mixed Grill">
+                        </figure>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Beef" value="10">Big Beef on a Bun: $10.00
+                    </td>
+
+                    <td>
+                        <label for="BeefQuantity" class="qpad">Quantity: </label>
+                        <input id="BeefQuantity" name="BeefQuantity" type="number" placeholder="0" min="0" max="5" value="0">
+                    </td>
+
+                    <td>
+                        <figure class="rightfig" id="BeefSmall">
+                            <img src="100px/bigbeef.jpg" alt="BigBeefonaBun">
+                        </figure>
+
+                        <figure id="BeefBig" class="hidden">
+                            <img src="400px/bigbeef.jpg" alt="BigBeefonaBun">
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="printhide">
+            <p class="subhead">Beverages</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Coffee" value="2">Coffee: $2.00
+                    </td>
+
+                    <td>
+                        <label for="CoffeeQuantity" class="qpad">Quantity: </label>
+                        <input id="CoffeeQuantity" name="CoffeeQuantity" type="number" placeholder="0" min="0" max="5" value="0">
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="100px/coffee.jpg" alt="Coffee">
+                        </figure>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Latte" value="2.5">Latte: $2.50
+                    </td>
+
+                    <td>
+                        <label for="LatteQuantity" class="qpad">Quantity: </label>
+                        <input id="LatteQuantity" name="LatteQuantity" type="number" placeholder="0" min="0" max="5" value="0">
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="100px/latte.jpg" alt="Latte">
+                        </figure>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="SoftDrink" value="1.75">Soft drink: $1.75
+                    </td>
+
+                    <td>
+                        <label for="SoftDrinkQuantity" class="qpad">Quantity: </label>
+                        <input id="SoftDrinkQuantity" name="SoftDrinkQuantity" type="number" placeholder="0" min="0" max="5" value="0">
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="100px/drink.jpg" alt="Softdrink">
+                        </figure>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="required" id="timea">Pick Up Time </div>
+        Available between 9 AM and 7 PM
+        <input name="pickuptime" type="datetime-local" id="pickup" min="2021-02-03T12:00" required>
+
+        <p></p>
+
+        <div>
+            <input type="button" class="button" id="buttonorder" value="Check Order Total" onClick="ordercheck();">
+        </div>
+        <p><span id="result"></span></p>
+
+
+        <div>
+            <input type="reset" id="reset" class="button" value="Reset Order">
+            <input type="submit" id="sub" class="button" value="Submit Order">
+        </div>
+</body>
+
+</html>

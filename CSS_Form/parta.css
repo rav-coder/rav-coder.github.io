@@ -1,0 +1,55 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Exo', sans-serif;
+    background-color: linen;
+}
+
+.imageleft {
+    float: left;
+    width: 200px;
+    margin: 0px 10px 0px 0px;
+    border-style: groove;
+    padding: 10px;
+    border-color: orangered;
+}
+
+.imageright {
+    float: right;
+    width: 200px;
+    margin: 0px 0px 0px 10px;
+    border-style: groove;
+    padding: 10px;
+    border-color: mediumblue;
+}
+
+#header {
+    text-align: center;
+    color: royalblue;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+}
+
+.imagesize {
+    width: 200px;
+}
+
+a:hover {
+    color: crimson;
+}
+
+p::first-letter {
+    font-size: 150%;
+    color: royalblue;
+}
+
+@media print {
+    body {
+        background-color: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

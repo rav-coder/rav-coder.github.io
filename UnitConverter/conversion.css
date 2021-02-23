@@ -1,0 +1,39 @@
+body {
+    background-color: #f6fad7;
+    font-family: 'Open Sans', serif, 'Times New Roman', Times;
+    font-style: italic;
+}
+
+.mainheader {
+    color: #d50000;
+    font-style: normal;
+}
+
+.subheaders {
+    font-size: 25px;
+    margin-top: 30px;
+    font-style: normal;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container>div {
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    margin-left: 5px;
+    size: 500px;
+}
+
+input[type=number] {
+    width: 100px;
+}
+
+.javaout {
+    font-size: 20px;
+    margin-left: 15px;
+    font-style: normal;
+}

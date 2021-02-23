@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<htmL lang="en-us">
+
+<head>
+    <title>
+        Convert Imperial to Metric
+    </title>
+    <h1 class="mainheader">Imperial and Metric Conversion</h1>
+    <script type="text/javascript" src="conversion.js"></script>
+    <link type="text/css" rel="stylesheet" href="conversion.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<p class="subheaders">➡ Convert Between Litres and US Gallons</p>
+<div class="flex-container">
+
+    <div>
+        <label for="Litres">Litres</label>
+    </div>
+    <div>
+        <input type="number" min=0 id="Litres" name="Litres" placeholder="0" oninput="litTOgal(this.value)">
+    </div>
+
+    <div>
+        <div>
+            <==>
+        </div>
+    </div>
+    <div>
+        <input type="number" min=0 id="Gallons" name="Gallons" placeholder="0" oninput="galTOlit(this.value)">
+    </div>
+    <div>
+        <label for="Gallons">Gallons</label>
+    </div>
+
+</div>
+<p id="out1" class="javaout"></p>
+
+<p class="subheaders">➡ Convert Between Meters and Feet</p>
+<div class="flex-container">
+
+    <div>
+        <label for="Meters">Meters</label>
+    </div>
+    <div>
+        <input type="number" min=0 id="Meters" name="Meters" placeholder="0" oninput="metersC(this.value)">
+    </div>
+
+    <div>
+        <==>
+    </div>
+    <div>
+        <input type="number" min=0 id="Feet" name="Feet" placeholder="0" oninput="feetC(this.value)">
+    </div>
+    <div>
+        <label for="Feet">Feet</label>
+    </div>
+
+</div>
+<p id="out2" class="javaout"></p>
+
+<p class="subheaders">➡ Convert Between Square Meters and Square Feet</p>
+<div class="flex-container">
+
+    <div>
+        <label for="Square Meters">m²</label>
+    </div>
+    <div>
+        <input type="number" min=0 id="Square Meters" name="Square Meters" placeholder="0" oninput="smetersC(this.value)">
+    </div>
+
+    <div>
+        <==>
+    </div>
+
+    <div>
+        <input type="number" min=0 id="Square Feet" name="Square Feet" placeholder="0" oninput="sfeetC(this.value)">
+    </div>
+    <div>
+        <label for="Square Feet">ft²</label>
+    </div>
+
+</div>
+<p id="out3" class="javaout"></p>
+
+<p class="subheaders">➡ Convert Between KiloMeters and Mile</p>
+<div class="flex-container">
+
+    <div>
+        <label for="km">km</label>
+    </div>
+    <div>
+        <input type="number" min=0 id="km" name="km" placeholder="0" oninput="kmC(this.value)">
+    </div>
+
+    <div>
+        <==>
+    </div>
+
+    <div>
+        <input type="number" min=0 id="mile" name="mile" placeholder="0" oninput="mileC(this.value)">
+    </div>
+    <div>
+        <label for="Gallons">mile</label>
+    </div>
+
+</div>
+<p id="out4" class="javaout"></p>
+
+</htmL>

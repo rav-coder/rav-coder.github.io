@@ -1,0 +1,115 @@
+body {
+    font-family: 'Lemonada', cursive, serif;
+    font-size: 15px;
+    background-color: #eeeeee;
+    margin-left: 1%;
+}
+
+@media print {
+    body {
+        background-color: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    .printhide {
+        display: none;
+    }
+    img {
+        display: none;
+    }
+}
+
+#date {
+    color: rgb(255, 5, 25);
+}
+
+.inputbox {
+    margin-bottom: 15px;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Lemonada', cursive, serif;
+}
+
+.button#reset {
+    background-color: brown;
+}
+
+.button#buttonorder {
+    background-color: cornflowerblue;
+}
+
+.qpad {
+    margin-left: 30px;
+}
+
+.subhead {
+    font-size: 18px;
+    color: teal;
+    margin-bottom: 0px;
+    margin-left: 3%;
+}
+
+.cafe {
+    color: teal;
+    font-size: 25px;
+}
+
+#timea {
+    font-size: 18px;
+    color: teal;
+}
+
+.button#sub {
+    margin-left: 20px;
+}
+
+.rightfig {
+    border-style: groove;
+    border-color: antiquewhite;
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+    border-style: groove;
+    border-color: #4CAF50;
+    padding: 10px;
+}
+
+#MargheritaSmall:hover~.hidden#MargheritaBig {
+    display: block;
+}
+
+#QuattroSmall:hover~.hidden#QuattroBig {
+    display: block;
+}
+
+#CapricciosaSmall:hover~.hidden#CapricciosaBig {
+    display: block;
+}
+
+#MixedGrillSmall:hover~.hidden#MixedGrillBig {
+    display: block;
+}
+
+#SchnitzelSmall:hover~.hidden#SchnitzelBig {
+    display: block;
+}
+
+#BeefSmall:hover~.hidden#BeefBig {
+    display: block;
+}

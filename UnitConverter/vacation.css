@@ -1,0 +1,32 @@
+body {
+    font-family: 'Hachi Maru Pop', cursive, serif;
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v499-kul-17-abstractbackground_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=40088052dc650b5ff86dff559f76ea0c);
+}
+
+.caption {
+    margin-left: 20%;
+    width: 50%;
+    text-align: center;
+    color: brown;
+    font-size: 25px;
+}
+
+.heading1 {
+    margin-left: 20%;
+    width: 50%;
+    text-align: center;
+    color: rgb(0, 0, 255);
+    font-size: 35px;
+}
+
+.picture {
+    margin-left: 20%;
+}
+
+.header {
+    margin-left: 20%;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}

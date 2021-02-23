@@ -1,0 +1,14 @@
+javascript oninput (live changes as user types in the input field):
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_oninput
+
+flexbox css for page (table type behavior):
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_flex-wrap_nowrap8
+
+Google Fonts:
+https://fonts.google.com/specimen/Open+Sans?preview.text_type=custom&selection.family=Open+Sans
+https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap
+
+
+Arrow Picture:
+https://icon2.cleanpng.com/20180508/abe/kisspng-computer-icons-arrow-download-5af25c7e036fb0.8384538015258328300141.jpg
+
