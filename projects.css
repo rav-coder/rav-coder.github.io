@@ -1,8 +1,13 @@
 body {
-    background-color: #fff;
-    font-family: 'Abril Fatface', cursive, serif;
     background-image: linear-gradient(to right, #fff, #f0f6fc);
     background-image: linear-gradient(to right, rgb(63, 119, 172), #c0361e5d);
+    font-family: 'Newsreader', serif;
+}
+
+.webjava {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 40px;
 }
 
 ul {
@@ -44,20 +49,103 @@ li a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background-color: DodgerBlue; */
+    margin-top: 10px;
 }
 
-.project-container>div {
+.project-container>.subblock {
     background-color: #f1f1f1;
     width: 400px;
     margin: 10px;
     text-align: center;
-    line-height: 275px;
-    font-size: 30px;
+    line-height: 150px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid rgba(63, 119, 172, 0.603);
 }
 
 @media (max-width: 1270px) {
     .project-container {
         flex-direction: column;
     }
+}
+
+a.linkbutton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 4px;
+    cursor: pointer;
+    font-family: 'Newsreader', serif;
+    text-decoration: none;
+    max-height: 20px;
+    line-height: normal;
+    border-radius: 7px;
+    border: 1px;
+    font-weight: normal;
+}
+
+a.linkbutton#livepreview {
+    background-color: #c0361e;
+}
+
+a.linkbutton:hover {
+    border: 3px solid rgba(7, 7, 7, 0.363);
+}
+
+#project1 {
+    background-color: rgba(255, 255, 255, 0.904);
+    background-image: url("/Cafe Europa/cafe.png");
+    background-blend-mode: lighten;
+}
+
+#project2 {
+    background-color: rgba(255, 255, 255, 0.904);
+    background-image: url("/UnitConverter/unit.png");
+    background-blend-mode: lighten;
+}
+
+#project3 {
+    background-color: rgba(255, 255, 255, 0.904);
+    background-image: url("/CSS_Form/css1.png");
+    background-blend-mode: lighten;
+}
+
+#project4 {
+    background-color: rgba(255, 255, 255, 0.904);
+    background-image: url("/CSS_Form/form.png");
+    background-blend-mode: lighten;
+}
+
+#project5 {
+    background-color: rgba(255, 255, 255, 0.904);
+    /* background-image: url("/CSS_Form/css1.png"); */
+    background-blend-mode: lighten;
+}
+
+#project6 {
+    background-color: rgba(255, 255, 255, 0.904);
+    /* background-image: url("/CSS_Form/css1.png"); */
+    background-blend-mode: lighten;
+}
+
+#project7 {
+    background-color: rgba(255, 255, 255, 0.904);
+    /* background-image: url("/CSS_Form/css1.png"); */
+    background-blend-mode: lighten;
+}
+
+#project8 {
+    background-color: rgba(255, 255, 255, 0.904);
+    /* background-image: url("/CSS_Form/css1.png"); */
+    background-blend-mode: lighten;
+}
+
+#project9 {
+    background-color: rgba(255, 255, 255, 0.904);
+    /* background-image: url("/CSS_Form/css1.png"); */
+    background-blend-mode: lighten;
 }
