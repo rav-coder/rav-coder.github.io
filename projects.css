@@ -2,6 +2,7 @@ body {
     background-color: #fff;
     font-family: 'Abril Fatface', cursive, serif;
     background-image: linear-gradient(to right, #fff, #f0f6fc);
+    background-image: linear-gradient(to right, rgb(63, 119, 172), #c0361e5d);
 }
 
 ul {
@@ -36,4 +37,27 @@ li a:hover {
 
 .selected {
     background-color: rgb(250, 199, 192);
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: DodgerBlue; */
+}
+
+.project-container>div {
+    background-color: #f1f1f1;
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    line-height: 275px;
+    font-size: 30px;
+}
+
+@media (max-width: 1270px) {
+    .project-container {
+        flex-direction: column;
+    }
 }
