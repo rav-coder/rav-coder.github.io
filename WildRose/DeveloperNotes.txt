@@ -1,0 +1,8 @@
+Newsreader Google Font:
+https://fonts.google.com/specimen/Newsreader?preview.text_type=custom
+
+Wildrose Logo:
+https://img.discogs.com/5U69dt_O8-I4-LWy3LcFqrYR9Y0=/fit-in/600x567/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8504498-1464047142-3077.jpeg.jpg
+
+Onclick validation for add button:
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_js
