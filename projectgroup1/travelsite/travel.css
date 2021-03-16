@@ -1,0 +1,189 @@
+body {
+    background-image: linear-gradient(to right, rgb(63, 119, 172), #c0361e5d);
+    font-size: 20px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+
+/* Media Print Control*/
+
+@media print {
+    body {
+        background-color: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    img {
+        display: none;
+    }
+    figure {
+        display: none;
+    }
+    .button {
+        display: none;
+    }
+}
+
+
+/* Footers Logo & Company Info */
+
+#footerdiv {
+    text-align: center;
+    position: fixed;
+    left: 10%;
+    bottom: 2%;
+    width: 60%;
+    color: white;
+    background-color: rgb(236, 241, 245);
+    color: black;
+}
+
+#footerdiv2 {
+    text-align: center;
+    position: fixed;
+    left: 70.5%;
+    bottom: 2%;
+    width: 20%;
+    color: white;
+    background-color: rgb(236, 241, 245);
+    color: black;
+}
+
+#headerleft {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    color: white;
+    background-image: linear-gradient(to left, rgb(202, 219, 235), #c2877d5d);
+    background-color: aliceblue;
+}
+
+#headerright {
+    text-align: center;
+    position: fixed;
+    left: 95%;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    color: white;
+    background-image: linear-gradient(to left, rgb(202, 219, 235), #c2877d5d);
+    background-color: aliceblue;
+}
+
+#companyname {
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px rgb(189, 27, 27);
+}
+
+.sociallinks {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#mail:hover {
+    font-size: 25px;
+    color: blue;
+    color: rgb(63, 119, 172);
+}
+
+#facebook:hover {
+    font-size: 25px;
+    color: blue;
+    color: rgb(63, 119, 172);
+}
+
+#mail {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 28.5px;
+}
+
+#facebook {
+    color: rgba(0, 0, 0, 0.87);
+    padding-left: 10px;
+    font-size: 28.5px;
+}
+
+.bottomtext {
+    margin-top: 5px;
+}
+
+.bottomtext2 {
+    margin-bottom: 5px;
+}
+
+
+/* Image Slideshow */
+
+* {
+    box-sizing: border-box;
+}
+
+.slides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 59.5vw;
+    position: relative;
+    margin: auto;
+}
+
+.captiontext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(63, 119, 172, 0.788);
+    background-color: rgba(189, 27, 27, 0.945);
+}
+
+.slidenumber {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    background-color: rgb(189, 27, 27);
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

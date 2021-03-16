@@ -1,0 +1,101 @@
+CurrencyConverter:
+
+    This program lets the user convert 5 types of currencies. The user enters a number which is 
+    validated and converted to the selected currency. The conversion rate is also shown. 
+
+    At the start, I had two input fields where currency would change as the user entered in one of the fields. But,
+    this ended up being too complicated. So, the input field the currency was being converted to was removed
+    for the simplicity of the user and myself.
+    The clear button also clears the conversion output text using javascript. The crypto currency values are not
+    rounded to two decimal places as 1 US Dollar would amount to 0.000018 BTC which would show as 0.00 BTC if 
+    rounded.
+
+    Below are the references used:
+
+        Drop-down select tag: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_optgroup
+
+        Button with click effect: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3
+
+        Brygada 1918 Google Font: https://fonts.google.com/specimen/Brygada+1918?preview.text_type=custom
+
+        Conversion Rates: (2021 March 11 12:45 PM MST) listed in:
+            https://www.coindesk.com/calculator 
+            and https://coinmarketcap.com/converter/eth/btc/ 
+            and https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CAD
+
+            1 BTC = 56,688.25 USD
+            1 BTC = 71,321.7 CAD
+            1 BTC = 47,410.48 EUR
+
+            1 Bitcoin (BTC)= 31.75011198 Ethereum (ETH)
+
+            1 ETH = 1,803.89 USD
+            1 ETH = 2,269.54 CAD
+            1 ETH = 1,508.66 EUR
+
+            1.00 USD = 1.254058821 CAD
+            1.00 USD = 0.8345820787 EUR
+            1.00 CAD= 0.66549020232118 EUR
+
+        Format for commas and sig digs on currency: https://stackoverflow.com/questions/149055/how-to-format-numbers-as-currency-string
+
+        Image Link: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hiclipart.com%2Ffree-transparent-background-png-clipart-pqydz&psig=AOvVaw1OlEEnYsOt4RsZq-yYvRut&ust=1615601026945000&source=images&cd=vfe&ved=0CAYQjRxqFwoTCJjFpILVqe8CFQAAAAAdAAAAABAJ
+
+        JavaScript Used from Lab 7 Lecture SAIT
+        - FocusJSFuncitons.js
+        - StandardJSFunctions.js
+
+ 
+TravelSite:
+
+    Font Awesome was used for the email and facbook icon. Footer was used for the company info at the bottom.
+    Header has the logo and the company name. The caption is placed at the bottom of the picture. 
+    A text saying welcome will be put on the left pane of the page verticalky in the future. The right pane
+    will be used for other links or for navigation pane.
+
+    Vacation Images Credit: Rav
+
+    References used:
+        W3Schools Slideshow: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery
+
+                            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+
+        W3Schools Footer: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_footer
+
+        Google Font RocknRoll One: https://fonts.google.com/specimen/RocknRoll+One?preview.text_type=custom
+
+        Company Logo: https://pbs.twimg.com/profile_images/1078011377174831105/v72AHwLC.jpg
+
+
+   
+NewCityBakeries:
+
+    First I sketched out what the website should look like based on the requirements. I realized the form with names
+    could be in the starting page and scrolling would take users to the cake info and order info. Having the order 
+    info update on the side as users update the cake info would be beneficial. Try and catch was used to show errors,
+    (we learned about this in java).
+
+    Few improvements could be made on this website. First, if the length width and radius are not within the specified
+    value a small pop up shows up but the calculation still takes place. Also, the order details can be calculated without
+    the user filling out the form with name, email, etc. However, both of these are validated and solved when the user tries 
+    to submit their order.
+
+
+    References Used:
+
+    JavaScript Used from Lab 7 Lecture SAIT
+        - StandardJSFunctions.js
+
+    Bakery Logo: https://bcassetcdn.com/public/blog/wp-content/uploads/2019/09/18094502/baker-silhouette.png
+
+    Font Awesome for Logos: https://fontawesome.com/
+
+    Responsive Flexbox W3Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_responsive
+
+    Google Font: https://fonts.google.com/specimen/Tajawal?preview.text_type=custom&preview.text=Almost%20before%20we%20knew%20it,%20we%20had%20left%20the%20ground.%2034123
+
+    Hide and Show Div on Click: https://codepen.io/MathesSM/pen/Nzpyjg
+
+    Try & Catch: https://www.w3schools.com/js/tryit.asp?filename=tryjs_throw_error
+
+

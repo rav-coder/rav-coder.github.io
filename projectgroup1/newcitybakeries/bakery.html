@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> New City Bakeries</title>
+    <script type='text/javascript' src='bakery.js'></script>
+    <script type="text/javascript" src="StandardJSFunctions.js"></script>
+    <script src="https://kit.fontawesome.com/67a9b87715.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link type='text/css' rel='stylesheet' href='bakery.css'>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <img src="baker-silhouette.png" alt="New City Bakeries Logo" width="130px">
+            </div>
+            <div class="flex-item-right">
+                <div class="bottomtext">New City Bakeries</div>
+                <div class="bottomtext2">Phone # (403) 567 - 45CA</div>
+                <div class="sociallinks">
+                    <a id="mail" target="_blank" href="mailto:newcitybakery@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+                    <a id="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="flex-container1">
+        <div class="flex-item-center">
+            <div class="divsize"></div>
+            <form name="myForm" id="registrationform" action="https://localhost/registration.htm" method="GET">
+                <div>
+                    <label for="name" class="required">First Name: </label>
+                    <input type="text" name="fname" class="name" id="fname" size="25" maxlength="25" pattern="[a-zA-Z]{0,24}" placeholder="John" required autofocus>
+                </div>
+
+                <div class="divsize"></div>
+
+                <div>
+                    <label for="name">Last Name: </label>
+                    <input type="text" name="lname" class="name" id="lname" size="25" maxlength="25" pattern="[a-zA-Z]{0,24}" placeholder="Doe">
+                </div>
+
+                <div class="divsize"></div>
+
+                <div>
+                    <label for="address" class="required">Address: </label>
+                    <input type="text" name="address" class="name" id="address" size="25" maxlength="50" placeholder="123 Main St." required>
+                </div>
+
+                <div class="divsize"></div>
+
+                <div>
+                    <label for="postal" class="required">Postal Code: </label>
+                    <input type="text" name="postal" class="name" id="postalcode" size="10" maxlength="7" pattern="[a-zA-Z][0-9][a-zA-Z ][\s][0-9][a-zA-Z][0-9]" placeholder="A1A 1A1" required>
+                </div>
+
+                <div class="divsize"></div>
+
+                <div>
+                    <label for="tele" class="required">Phone Number: </label>
+                    <input type="tel" name="tele" id="phone" class="name" size="10" pattern="\d{3} \d{3} \d{4}" placeholder=" ### ### ####">
+                </div>
+
+                <div class="divsize"></div>
+
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" class="name" id="email1" size="25" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@domain.net">
+                </div>
+
+                <div class="divsize"></div>
+
+        </div>
+    </div>
+
+    <div class="flex-container2">
+        <div class="flex-item-left2">
+            <div class="divsize"></div>
+            <div id="caketypetext">
+                <div class="required">Select cake type: </div>
+                <input type="radio" id="caketypeS" name="caketype" value="Sheet" onclick="showWidth()">
+                <label for="sheet">Sheet Cake</label>
+                <input type="radio" id="caketypeR" name="caketype" value="Round" onclick="showRadius()">
+                <label for="round">Round Cake</label>
+            </div>
+
+            <div>
+                <div id="sheetvalue" class="hide">
+                    <div class="divsize"></div>
+                    <div>
+                        <label for="length">Length: </label>
+                        <input type="number" id="lengthcake" name="lengthcake" placeholder="30 - 60" min="30" max="60" onchange="showLayer()" oninput="showLayer()"> cm
+
+                        <label for="width" id="widthtext">Width: </label>
+                        <input type="number" id="widthcake" name="widthcake" placeholder="30 - 45" min="30" max="45" onchange="showLayer()" oninput="showLayer()"> cm
+                    </div>
+                    <p id="p01"></p>
+                </div>
+
+                <div id="roundvalue" class="hide">
+                    <div class="divsize"></div>
+                    <label for="radius">Radius: </label>
+                    <input type="number" id="radiuscake" name="radiuscake" placeholder="15 -30" min="15" max="30" onchange="showLayer()" oninput="showLayer()"> cm
+                </div>
+                <p id="p02"></p>
+                <div class="divsize"></div>
+                <div class="divsize"></div>
+                <div id="activateonradio" class="hide">
+                    <div class="divsize"></div>
+                    <div id="clientlayer">
+                        Additional Layers:<br>
+                        <input type="checkbox" id="Layer1" name="AddLayer" value="0.5" onclick="showLayer()">
+                        <label for="Layer1"> Add One More Layer</label><br>
+                        <input type="checkbox" id="Layer2" name="AddLayer" value="0.5" onclick="showLayer()">
+                        <label for="Layer2"> Add Another Layer</label>
+                    </div>
+
+                    <div class="divsize"></div>
+                    <div class="divsize"></div>
+                    <div id="toppingstext">
+                        Additional Choices:<br>
+                        <input type="checkbox" id="Choice1" name="AddChoice" value="5" onclick="showLayer()">
+                        <label for="Choice1"> Cream Cheese Icing ($5)</label><br>
+                        <input type="checkbox" id="Choice2" name="AddChoice" value="7" onclick="showLayer()">
+                        <label for="Choice2"> Fruit & Almonds Topping ($7)</label><br>
+                        <input type="checkbox" id="Choice3" name="AddChoice" value="4" onclick="showLayer()">
+                        <label for="Choice3"> Fruit Jam Filling bet. Layers ($4)</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="flex-item-right2">
+            <div class="divsize"></div>
+            <div class="hide" id="orderdetails">Order Details for:
+            </div>
+            <div id="ItemsEntered">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div><input type="submit" class="button" id="button" value="Submit Order"></div>
+        </form>
+    </footer>
+</body>
+
+</html>

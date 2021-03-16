@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Currency Convert</title>
+    <script type="text/javascript" src="currencyconverter.js"></script>
+    <script type="text/javascript" src="StandardJSFunctions.js"></script>
+    <link type="text/css" rel="stylesheet" href="currencyconverter.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Currency Converter</h1>
+    <img src="logo.jpg" alt="logo" width="80">
+    <span id="help-message" class="msg-icon hidden"></span>
+    <form>
+        <label for="currencymain"></label><br>
+
+        <select name="currencymain" id="currencymain" data-helpMsg="Please enter the base currency" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+    <optgroup label="Cash">
+      <option value="US">US Dollar</option>
+      <option value="CAD">Canadian Dollar</option>
+      <option value="Euro">Euro</option>
+      
+    </optgroup>
+    <optgroup label="Crypto">
+      <option value="Bitcoin">Bitcoin</option>
+      <option value="Ethereum">Ethereum</option>
+    </optgroup>
+  </select>
+        <input type="text" name="currencymain-field" id="currencymain-field" placeholder="0.00" data-helpMsg="Please enter the amount to convert" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+        <p>To</p>
+
+        <label for="currencyto"></label>
+
+        <select name="currencyto" id="currencyto" data-helpMsg="Please enter the currency you want to convert to" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+  <optgroup label="Cash">
+    <option value="US">US Dollar</option>
+    <option value="CAD">Canadian Dollar</option>
+    <option value="Euro">Euro</option>
+  </optgroup>
+  <optgroup label="Crypto">
+    <option value="Bitcoin" selected>Bitcoin</option>
+    <option value="Ethereum">Ethereum</option>
+  </optgroup>
+</select>
+        <input type="text" name="currencyto-field" id="currencyto-field" placeholder="0.00">
+        <br>
+        <div id="ItemsEntered"></div>
+        <input type="reset" value="Clear" class="button" id="resetbutton" onclick="ClearInputs()">
+        <button type="button" class="button" onclick="convertMain(getElementById('currencymain-field').value)">Convert</button>
+    </form>
+
+
+    </div>
+</body>
+
+</html>
