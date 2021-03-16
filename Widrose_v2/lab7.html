@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <title> Wild Rose Country Finance</title>
+    <script type='text/javascript' src='lab6.js'></script>
+    <script type="text/javascript" src="StandardJSFunctions.js"></script>
+    <script type="text/javascript" src="FocusJSFunctions.js"></script>
+    <link type='text/css' rel='stylesheet' href='lab6.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainheading">
+        Wild Rose Country Finance
+        <figure>
+            <img src="wildrose.jpg" alt="Rose" style="width:90px">
+        </figure>
+    </div>
+
+    <div class="project-container">
+        <span id="help-message" class="msg-icon hidden"></span>
+        <div class="subblock" id="project1">
+            <div class="divsize"></div>
+            <form name="myForm" id="registrationform" action="https://localhost/registration.htm" method="GET">
+                <input id="edit-id" type="hidden" value="-1">
+                <div>
+                    <label for="name" class="required">First Name: </label>
+                    <input type="text" name="fname" class="name" id="fname" size="25" maxlength="25" pattern="[a-zA-Z]{0,24}" placeholder="John" data-helpMsg="Please enter your first name, up to 25 characters from A-Z" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')"
+                        required>
+                </div>
+
+                <div class="divsize"></div>
+
+                <div>
+                    <label for="name" class="required">Last Name: </label>
+                    <input type="text" name="lname" class="name" id="lname" size="25" maxlength="25" pattern="[a-zA-Z]{0,24}" placeholder="Doe" data-helpMsg="Please enter your last name, up to 25 characters from A-Z" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')"
+                        required>
+                </div>
+
+                <div class="divsize"></div>
+
+                <div>
+                    <label for="address" class="required">Street Address: </label>
+                    <input type="text" name="address" class="name" id="address" size="25" maxlength="50" placeholder="123 Main St." data-helpMsg="Please enter your street address." onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')" required>
+                </div>
+
+                <div class="divsize"></div>
+
+                <div>
+                    <label for="postal" class="required">Postal Code: </label>
+                    <input type="text" name="postal" class="name" id="postalcode" size="10" maxlength="7" pattern="[a-zA-Z][0-9][a-zA-Z ][\s][0-9][a-zA-Z][0-9]" placeholder="A1A 1A1" data-helpMsg="Please enter your postal code, format A1A 1A1" onfocus="HasFocus(this.id,'help-message')"
+                        onblur="LostFocus(this.id,'help-message')" required>
+                </div>
+
+                <div class="divsize"></div>
+
+                <div id="phoneselect" data-helpMsg="Please enter your phone type by selecting on one of the radio buttons" onmouseover="HasFocusGroup('phoneselect','help-message')" onmouseout="LostFocusGroup('phoneselect','help-message')">
+                    <div>Phone Type: </div>
+                    <input type="radio" id="Personal" name="phonetype" value="personal">
+                    <label for="personal">Personal</label>
+                    <input type="radio" class="leftgap" id="Business" name="phonetype" value="business">
+                    <label for="business">Business</label>
+                </div>
+
+                <div class="divsize"></div>
+
+                <div>
+                    <label for="tele" class="required">Phone Number: </label>
+                    <input type="tel" name="tele" id="phone" class="name" size="15" pattern="\d{3} \d{3} \d{4}" placeholder=" ### ### ####" data-helpMsg="Please enter your phone number, format: 123 456 7890" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+                </div>
+
+                <div class="divsize"></div>
+
+                <div>
+                    <label for="email" class="required">E-mail: </label>
+                    <input type="email" name="email" class="name" id="email1" size="25" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@domain.net" data-helpMsg="Please enter your email, format: example@domain.net" onfocus="HasFocus(this.id,'help-message')"
+                        onblur="LostFocus(this.id,'help-message')" required>
+                </div>
+
+                <div class="divsize"></div>
+                <div>
+                    <label for="date">Current Date: </label>
+                    <input type="date" name="date" class="name" size="50" maxlength="50" min="2021-02-24">
+                </div>
+
+                <div class="divsize"></div>
+
+
+        </div>
+
+        <div class="subblock" id="project2">
+
+            <div class="divsize"></div>
+            <div id="clienttext" data-helpMsg="Select one of the radio buttons to choose if they are current clients" onmouseover="HasFocusGroup('clienttext','help-message')" onmouseout="LostFocusGroup('clienttext','help-message')">
+                <div class="required">Are they current clients? </div>
+                <input type="radio" id="currentclientyes" name="currentclient" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="currentclientno" name="currentclient" value="No" class="leftgap">
+                <label for="no">No</label>
+            </div>
+
+            <div class="divsize"></div>
+            <div id="clientgendertext" data-helpMsg="Select one of the radio buttons to indicate their gender" onmouseover="HasFocusGroup('clientgendertext','help-message')" onmouseout="LostFocusGroup('clientgendertext','help-message')">
+                <div class="required">Gender </div>
+                <input type="radio" id="genderclientm" name="genderclient" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="genderclientf" name="genderclient" value="Female" class="leftgap">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="divsize"></div>
+            <div id="clienthometext" data-helpMsg="Select one of the radio buttons to indicate if they own or rent a home" onmouseover="HasFocusGroup('clienthometext','help-message')" onmouseout="LostFocusGroup('clienthometext','help-message')">
+                <div class="required">Own or Rent Home? </div>
+                <input type="radio" id="clienthomew" name="hometype" value="Own">
+                <label for="own">Own</label>
+                <input type="radio" id="clienthomer" name="hometype" value="Rent" class="leftgap">
+                <label for="rent">Rent</label>
+            </div>
+
+            <div class="divsize"></div>
+            <div>
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age" class="name" placeholder="18 - 110" min="18" max="110" data-helpMsg="Please enter the clients age between 18 and 110" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+            </div>
+
+            <div class="divsize"></div>
+            <div>
+                <label for="income">Annual Gross Income: $</label>
+                <input type="number" id="annualincome" name="income" class="name" placeholder="0" min="0" max="1,000,000,000,000" data-helpMsg="Please enter the clients annual income on CAD dollars" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+            </div>
+
+            <div class="divsize"></div>
+            <div id="clientowntext" data-helpMsg="Indicate what the client owns by checking or unchecking a chekcbox" onmouseover="HasFocusGroup('clientowntext','help-message')" onmouseout="LostFocusGroup('clientowntext','help-message')">
+                <div>Do you own the following? </div>
+                <div id="Personal"></div>
+
+                <input type="checkbox" id="Vehicle" name="Asset" value="Vehicle">
+                <label for="Vehicle"> Vehicle</label>
+                <input type="checkbox" id="RRSP" name="Asset" value="RRSP" class="leftgap">
+                <label for="RRSP"> RRSP</label>
+                <input type="checkbox" id="TFSA" name="Asset" value="TFSA" class="leftgap">
+                <label for="TFSA"> TFSA</label>
+                <input type="checkbox" id="RRIF" name="Asset" value="RRIF" class="leftgap">
+                <label for="RRIF"> RRIF</label>
+            </div>
+
+            <div class="divsize"></div>
+            <div id="errmessage" class="hidden">
+                <!-- Error messages for validation will be displayed here -->
+            </div>
+            <input type="reset" id="reset" class="button" value="Clear">
+            <!-- <input type="submit" class="button" value="Submit" onclick="return AddToArray(); return false;"> -->
+            <input type="button" id="btn-update" value="Update" disabled="true" onclick="UpdateArrayItem();return false;">
+            <input type="button" class="button" id="btn-submit" value="Submit" onclick="return AddToArray()">
+
+            <div class="divsize"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="list-container" id="clientcontainer">
+        <div class="blocks" id="project1">
+            <div class="output-list">Client List</div>
+            <form id="ItemsEnteredSubmit" action="https://localhost/bulkupdate" method="POST">
+                <div id="ItemsEntered">
+                </div>
+                <!-- <input type="submit" class="buttonall" value="Submit All"> -->
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
