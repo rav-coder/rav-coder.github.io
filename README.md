@@ -1,5 +1,5 @@
 # shashayabuddha.github.io
 
-Portfolio Build V1
+Portfolio Build V2
 
-Resume update - February 15,2021.
+One-Page Update - May 3,2021.
