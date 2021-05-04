@@ -2,10 +2,14 @@
 <html lang="en-us">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rav Portfolio</title>
     <link href="portfolio.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/67a9b87715.js" crossorigin="anonymous"></script>
 </head>
@@ -17,21 +21,238 @@
         <li><a href="resume.html">Resume</a></li>
         <li><a class="selected" href="index.html">Home</a></li>
     </ul> -->
-    <div class="leftonscreen">
-        <a class="sidebars" href="resume.html">▶Resume</a>
-    </div>
-    <div class="textonscreen">
-        <div id="heading1Name">HELLO</div>
-        <div id="heading2Name">I'M <span id="heading3Name">RAV</span></div>
-        <div id="heading4Name">A SOFTWARE DEVELOPER</div>
-        <div class="sociallinks">
-            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/saurav-adhikari-7288261bb/"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a id="github" href="https://github.com/shashayabuddha" target="_blank"><i class="fab fa-github fa-2x"></i></i></a>
+    <div class="onePage">
+        <div class="leftonscreen">
+            <a class="sidebars" href="#resume-content">▶Resume</a>
+        </div>
+        <div class="textonscreen">
+            <div id="heading1Name">HELLO</div>
+            <div id="heading2Name">I'M <span id="heading3Name">RAV</span></div>
+            <div id="heading4Name">A SOFTWARE DEVELOPER</div>
+            <div class="sociallinks">
+                <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/saurav-adhikari-7288261bb/"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a id="github" href="https://github.com/shashayabuddha" target="_blank"><i class="fab fa-github fa-2x"></i></i></a>
+            </div>
+        </div>
+
+        <div class="rightonscreen">
+            <a class="sidebars" href="#projects">▶Projects</a>
         </div>
     </div>
 
-    <div class="rightonscreen">
-        <a class="sidebars" href="projects.html">▶Projects</a>
+
+    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+    <section class="projects" id="projects">
+        <div class="content-wrap divider">
+            <h2>Featured Projects</h2>
+            <p>
+                <span class="lang-used"> HTML5</span>
+                <span class="lang-used"> CSS3</span>
+                <span class="lang-used"> JavaScript</span>
+            </p>
+
+            <p>
+                <span class="lang-used"> AJAX</span>
+                <span class="lang-used"> JSON</span>
+                <span class="lang-used"> XML</span>
+            </p>
+
+            <p>
+                <span class="lang-used"> Java</span>
+                <span class="lang-used"> SQL</span>
+                <span class="lang-used"> Adobe XD</span>
+            </p>
+
+            <!-- <section> block to add more projects. -->
+            <section class="project-item">
+                <img src="images/pdatasets.png" alt="description of image">
+                <h3>City of Calgary Datasets</h3>
+                <p>
+                    <span class="lang-internal"> HTML5</span>
+                    <span class="lang-internal"> CSS3</span>
+                    <span class="lang-internal"> JavaScript</span>
+                    <span class="lang-internal"> AJAX</span>
+                    <span class="lang-internal"> JSON</span>
+                </p>
+                <p>This website lets the user search and view data from four different JSON files located in the City of Calgary website. Searches can be made based on location, region, date, etc. Datasets that retrieve a longitude and latitude value can
+                    be seen on google maps.</p>
+                <a href="/finalproject/datasets/index.html" target="_blank">Live Preview</a>
+                <a href="https://github.com/shashayabuddha/shashayabuddha.github.io/blob/main/finalproject/datasets/index.html" target="_blank" id="code-link">Code</a>
+            </section>
+            <!-- End of Project block. -->
+
+            <!-- <section> block to add more projects. -->
+            <section class="project-item">
+                <img src="images/pquiz.png" alt="description of image">
+                <h3>Programming Quiz</h3>
+                <p>
+                    <span class="lang-internal"> HTML5</span>
+                    <span class="lang-internal"> CSS3</span>
+                    <span class="lang-internal"> JavaScript</span>
+                    <span class="lang-internal"> AJAX</span>
+                    <span class="lang-internal"> XML</span>
+                </p>
+                <p>The 5 questions in this quiz are retrieved from a XML file. Users are able to select an answer and move forward in the quiz. At the end, the answers selected by the users are compared with the answers in the XML file and the result is
+                    displayed.
+                </p>
+                <a href="/finalproject/quiz/quiz.html" target="_blank">Live Preview</a>
+                <a href="https://github.com/shashayabuddha/shashayabuddha.github.io/blob/main/finalproject/quiz/quiz.html" target="_blank" id="code-link">Code</a>
+            </section>
+            <!-- End of Project block. -->
+
+            <!-- <section> block to add more projects. -->
+            <section class="project-item">
+                <img src="images/pdodgy.png" alt="description of image">
+                <h3>Dodgy Brakes Car Rental</h3>
+                <p>
+                    <span class="lang-internal"> HTML5</span>
+                    <span class="lang-internal"> CSS3</span>
+                    <span class="lang-internal"> JavaScript</span>
+                    <span class="lang-internal"> AJAX</span>
+                    <span class="lang-internal"> JSON</span>
+                </p>
+                <p>Users are able to search for their name in the dodgy brakes car rental database. If their name is found, a rental form can be opened where their personal information is pre-filled and users can fill in the rental information.</p>
+                <a href="/finalproject/rentalcar/index.html" target="_blank">Live Preview</a>
+                <a href="https://github.com/shashayabuddha/shashayabuddha.github.io/blob/main/finalproject/rentalcar/index.html" target="_blank" id="code-link">Code</a>
+            </section>
+            <!-- End of Project block. -->
+
+            <!-- <section> block to add more projects. -->
+            <section class="project-item">
+                <img src="images/p1.png" alt="description of image">
+                <h3>Wild Rose Finance</h3>
+                <p>
+                    <span class="lang-internal"> HTML5</span>
+                    <span class="lang-internal"> CSS3</span>
+                    <span class="lang-internal"> JavaScript</span>
+                </p>
+                <p>This is an online form for Wild Rose Country Finance. This form receives user inputs, validates them and displays the information back to the user. Multiple clients and their information can be added, deleted and also edited.</p>
+                <a href="/Widrose_v2/lab7.html" target="_blank">Live Preview</a>
+                <a href="https://github.com/shashayabuddha/shashayabuddha.github.io/blob/main/Widrose_v2/lab7.html" target="_blank" id="code-link">Code</a>
+            </section>
+            <!-- End of Project block. -->
+        </div>
+    </section>
+
+    <!-- ***********************  WORK EXPERIENCE  *********************** -->
+    <section class="resume-content" id="resume-content">
+        <div class="content-wrap item-details divider">
+
+            <div id="fullname" class="info">SAURAV ADHIKARI</div>
+            <hr class="inheading">
+            <div class="row1">
+                <div class="column1">
+                    <p><strong>Phone#</strong> (587) 889-7999</p>
+                </div>
+                <div class="column1">
+                    <p><strong>Email:</strong> srvadhikariii@gmail.com</p>
+                </div>
+                <div class="column1">
+                    <p><strong>Location:</strong> Calgary, AB</p>
+                </div>
+            </div>
+
+            <p class="heading">EDUCATION</p>
+            <div>
+                <div class="list2">
+                    <a>IT SOFTWARE DEVELOPMENT</a>
+                </div>
+                <div class="list2">
+                    Southern Alberta Institute of Technology (SAIT)
+                </div>
+                <div class="list2">
+                    Calgary, AB
+                </div>
+                <div class="list2">
+                    → September 2020 - Present
+                </div>
+            </div>
+
+            <p style="text-align: center;">Cumulative GPA: 4.0 / 4.0</p>
+            <p class="heading2">Skills:</p>
+
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    <li>HTML</li>
+                </div>
+                <div class="flex-item-middle">
+                    <li>CSS</li>
+                </div>
+                <div class="flex-item-right">
+                    <li>JavaScript</li>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    <li>Java</li>
+                </div>
+                <div class="flex-item-middle">
+                    <li>SQL</li>
+                </div>
+                <div class="flex-item-right">
+                    <li>GitHub</li>
+                </div>
+            </div>
+
+            <div class="topgap">
+                <div class="list2">
+                    <a id="unique">HIGH SCHOOL DIPLOMA</a>
+                </div>
+                <div class="list2">
+                    Lester B. Pearson High School
+                </div>
+                <div class="list2">
+                    Calgary, AB
+                </div>
+            </div>
+
+            <p class="heading"><a id="bottomline">WORK EXPERIENCE</a></p>
+
+            <p>SECURITY GUARD</p>
+
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    BPS K-9 Protective Services
+                </div>
+
+                <div class="flex-item-middle">
+                    Securitas Canada
+                </div>
+                <div class="flex-item-right">
+                    365 Patrol Ltd.
+                </div>
+
+                <div class="flex-item-left">
+                    → April 2019 – November 2019
+                </div>
+                <div class="flex-item-middle">
+                    → November 2019 - June 2020
+                </div>
+                <div class="flex-item-right">
+                    → October 2020 - Present
+                </div>
+            </div>
+            <p>
+                Location: Calgary, AB
+            </p>
+        </div>
+    </section>
+
+    <div class="bottom-tab"></div>
+    <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+    <div>
+        <footer class="contactMe">
+            <h2>Let's Keep in Touch!</h2>
+
+            <!-- Social media and contact links. Add or remove any networks. -->
+            <ul class="contact-list">
+                <li><a href="mailto:srvadhikariii@gmail.com">SRVADHIKARIII@GMAIL.COM</a></li>
+                <li><a href="https://github.com/shashayabuddha" target="_blank">GITHUB</a></li>
+                <li><a href="https://www.linkedin.com/in/saurav-adhikari-7288261bb/" target="_blank">LINKEDIN</a></li>
+            </ul>
+            <div class="bottom-tab"></div>
+        </footer>
     </div>
 </body>
 

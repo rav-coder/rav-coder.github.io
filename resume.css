@@ -130,7 +130,10 @@ ul li {
     margin-top: 15px;
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
+    .flex-container {
+        display: block;
+    }
     .flex-item-right,
     .flex-item-middle,
     .flex-item-left {

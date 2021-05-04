@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calgary Crime Stats</title>
+    <script type='text/javascript' src='three.js'></script>
+    <script type='text/javascript' src='StandardJSFunctions.js'></script>
+    <link type='text/css' rel='stylesheet' href='all.css'>
+    <script type="text/javascript" src="FocusJSFunctions.js"></script>
+    <link type='text/css' rel='stylesheet' href='FocusJS.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <input type="button" class="button" id="btn-1" value="Home" onclick="location.href='index.html'">
+    </div>
+
+    <header>
+        <h1>Crime Stats Search</h1>
+    </header>
+
+    <div class="flex-container">
+        <span id="help-message" class="msg-icon hidden"></span>
+        <div>
+            <template1>
+                <form id="searchbox">
+                    <label for="idsearch">Search By Count</label><br>
+                    <input type="text" id="idsearch" name="ClientID" placeholder="7" data-helpMsg="Please enter the number of people involved." onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+                    <div id="button-area">
+                        <input type="reset" id="reset" class="button" onclick="Clear1()" value="Clear">
+                    </div>
+
+            </template1>
+            </form>
+        </div>
+        <div>
+            <template2>
+                <form id="searchbox2">
+                    <label for="namesearch">Search By Community</label><br>
+
+                    <input type="text" id="namesearch" name="Name" placeholder="Temple" data-helpMsg="Please enter a community name." onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+
+                    <div id="button-area">
+                        <input type="reset" id="reset" class="button" value="Clear" onclick="Clear2()">
+                    </div>
+            </template2>
+            </form>
+        </div>
+        <div>
+            <template3>
+                <form id="searchbox3">
+                    <label for="phonesearch">Search By Crime Phrase</label><br>
+
+                    <input type="text" id="phonesearch" name="Phone" placeholder="Assault" data-helpMsg="Please enter a phrase of the crime description." onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+
+                    <div id="button-area">
+                        <input type="reset" id="reset" class="button" value="Clear" onclick="Clear3()">
+                    </div>
+            </template3>
+            </form>
+        </div>
+    </div>
+
+    <div id="SearchResults"></div>
+    <div id="SearchResults2"></div>
+    <div id="SearchResults3"></div>
+
+    <br>
+    <br>
+    <div id="clientData"></div><br>
+
+    <footer>
+        <div>&copy CPRG 256</div>
+        <address>Alberta, Canada</address>
+    </footer>
+</body>
+
+</html>

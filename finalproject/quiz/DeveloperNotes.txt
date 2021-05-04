@@ -1,0 +1,21 @@
+The questions are loaded from the XML file.
+
+I first started with the ajax reader html, css and js files. The javascript was done so that one question is loaded 
+at a time using a break statement and a next button must be clicked to access the next question. Since we don't want
+people to submit empty answers, the next button is disabled until one of the radio buttons is clicked. The submit button
+appears in the final question and after that the grade is shown. Since I'm using an array to store the radio button values,
+I had to make it so that the answer is saved in the right index if a user changes their answer before clicking next. THis is
+achieved by using the answerCursor variable which increments after a new question is to be displayed.
+
+References:
+
+    CPRG 256 SAIT Lecture:
+    - AJAXReader.js
+    - AJAXReader.css
+    - AJAXReader.html
+    - StandarsJSFunctions.js
+
+    Disabled Button: https://stackoverflow.com/questions/14750078/style-disabled-button-with-css
+
+    Google FOnt: https://fonts.google.com/specimen/Nunito?category=Sans+Serif
+

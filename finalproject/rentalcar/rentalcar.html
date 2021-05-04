@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dodgy Brakes</title>
+    <script type='text/javascript' src='rentalcar.js'></script>
+    <script type='text/javascript' src='StandardJSFunctions.js'></script>
+    <link type='text/css' rel='stylesheet' href='rentalcar.css'>
+    <script type="text/javascript" src="FocusJSFunctions.js"></script>
+    <link type='text/css' rel='stylesheet' href='FocusJS.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <input type="button" class="button" id="btn-1" value="Home" onclick="location.href='index.html'">
+    </div>
+
+    <div class="flex-container2">
+        <span id="help-message" class="msg-icon hidden"></span>
+        <div id="searchFields">
+            <template2>
+                <form id="searchbox2">
+                    <label for="namesearch">Search By Last Name</label><br>
+                    <input type="text" id="namesearch" name="Name" placeholder="Doyle" data-helpMsg="Please enter a phrase in the last name." onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+                    <div id="button-area">
+                        <input type="reset" id="reset" class="button" value="Clear" onclick="Clear2()">
+                    </div>
+            </template2>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="SearchResults2"></div>
+
+    <div id="clientData"></div><br>
+
+    <div id="rentalForm">
+        <div class="flex-item-center">
+            <div class="divsize"></div>
+            <form name="myForm" id="registrationform" action="https://localhost/registration.htm" method="GET">
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <label for="name" class="required">First Name: </label>
+                    </div>
+                    <div class="flex-item-right">
+                        <input type="text" name="fname" class="name" id="fname" size="25" maxlength="25" placeholder="John" required data-helpMsg="Please enter your first name, up to 25 characters from A-Z" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')"
+                            onchange="radioChoice()">
+                    </div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <label for="name" class="required">Last Name: </label>
+                    </div>
+                    <div class="flex-item-right">
+                        <input type="text" name="lname" class="name" id="lname" size="25" maxlength="25" placeholder="Doe" required data-helpMsg="Please enter your last name, up to 25 characters from A-Z" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')"
+                            onchange="radioChoice()">
+
+                    </div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <label for="address" class="required">Address: </label>
+                    </div>
+                    <div class="flex-item-right">
+                        <input type="text" name="address" class="name" id="address" size="25" maxlength="50" placeholder="123 Main St." required data-helpMsg="Please enter your street address." onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+                    </div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <label for="province" class="required">State: </label>
+                    </div>
+                    <div class="flex-item-right">
+                        <input type="text" name="province" class="name" id="province" size="25" maxlength="25" placeholder="California" data-helpMsg="Please enter the state." onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')" required>
+                    </div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <label for="email" class="required">E-mail: </label>
+                    </div>
+                    <div class="flex-item-right">
+                        <input type="email" name="email" class="name" id="email1" size="25" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@domain.net" required data-helpMsg="Please enter your email, format: example@domain.net" onfocus="HasFocus(this.id,'help-message')"
+                            onblur="LostFocus(this.id,'help-message')">
+                    </div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <label for="tele" class="required">Phone Number: </label>
+                    </div>
+                    <div class="flex-item-right">
+                        <input type="tel" name="tele" id="phone" class="name" size="25" placeholder="123-456-7890" required data-helpMsg="Please enter your phone number, format: 123-456-7890" onfocus="HasFocus(this.id,'help-message')" onblur="LostFocus(this.id,'help-message')">
+                    </div>
+                </div>
+
+
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <div class="flex-container3">
+                            <div class="flex-item-left3">
+                                <p class="required">Vehicle Type </p>
+                                <div><input type="radio" id="compact" name="car" value="compact" onclick="radioChoice()" required>
+                                    <label for="compact">Compact <span id="priceT">$15/day</span></label></div>
+                                <div class="vehicleInfo"><input type="radio" id="mid-size" name="car" value="mid" onclick="radioChoice()">
+                                    <label for="mid-size">Mid-size <span id="priceT">$20/day</span></label></div>
+                                <div class="vehicleInfo"><input type="radio" id="luxury" name="car" value="luxury" onclick="radioChoice()">
+                                    <label for="luxury">Luxury <span id="priceT">$35/day</span></label></div>
+                                <div class="vehicleInfo"><input type="radio" id="van" name="car" value="van" onclick="radioChoice()">
+                                    <label for="van">Van <span id="priceT">$40/day</span></label></div>
+                                <div class="vehicleInfo"><input type="radio" id="truck" name="car" value="truck" onclick="radioChoice()">
+                                    <label for="truck">Truck <span id="priceT">$40/day</span></label></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-item-right">
+                        <div id="carImage"></div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <label for="quantity" class="required">Days Rental: </label>
+                    <input type="number" id="days" name="days" min="1" max="30" placeholder="1 - 30" onclick="radioChoice()" required>
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <div>Optional Add-ons</div>
+                    <!-- <div style="margin-top: 15px;">Rack</div> -->
+                    <div style="margin-top: 15px;">
+                        <input type="radio" id="roof" name="add-on" value="roof" onclick="radioChoice()">
+                        <label for="roof">Roof Rack <span id="priceT">$5/day</span></label>
+                        <input type="radio" id="bicycle" name="add-on" value="bicycle" style="margin-left: 20px;" onclick="radioChoice()">
+                        <label for="bicycle">Bicycle Rack <span id="priceT">$5/day</span></label>
+                        <input type="radio" id="neither" name="add-on" value="neither" style="margin-left: 20px;" onclick="radioChoice()">
+                        <label for="neither">Neither</label><br>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <input type="checkbox" id="gps" name="gps" value="10" onclick="radioChoice()">
+                        <label for="gps"> GPS Guidance <span id="priceT">$10/day</span></label><br>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <input type="checkbox" id="child" name="child" value="0" onclick="radioChoice()">
+                        <label for="child"> Child Seat <span id="priceT">Free</span></label><br>
+                    </div>
+                </div>
+
+
+
+                <div style="text-align: center; margin-top: 30px;" id="totalOut">
+
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <input type="submit" value="Submit" class="button" id="submit">
+
+                    </div>
+                    <div class="flex-item-right">
+                        <input type="button" class="button" id="cancel" value="Cancel" onclick="searchReturn()">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

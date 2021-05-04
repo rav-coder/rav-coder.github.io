@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz</title>
+    <script type="text/javascript" rel="script" src="AJAXReader.js"></script>
+    <script type="text/javascript" rel="script" src="StandardJSFunctions.js"></script>
+    <link type="text/css" rel="stylesheet" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--    <div id="common-nav">
+    </div>
+    <div id="err-message" class='hidden'></div>
+    <span id="popup-help" class="msg-icon hidden"></span> -->
+
+    <header>
+        <h1>Programming Quiz</h1>
+    </header>
+    <!-- The technique used to implement this was found on a CodePen from Jerald Austero
+        https://codepen.io/Jaoaustero/full/XOYJKV
+    -->
+    <section>
+        <template id='template-header-quiz'>
+            <div class="thead">
+                <div class="tr">
+                    <!-- <div class="th th-qNumber">Question</div> -->
+                    <!-- <div class="th th-prompt">Question</div> -->
+                    <br>
+                </div>
+            </div>
+        </template>
+        <template id='template-body'>
+            <div id="output-rows" class="tbody">
+                <!-- the template-row will go here -->
+            </div>
+        </template>
+
+        <div id="resultOut"></div>
+        <template id="template-row-quiz">
+            <div class="tr">
+                <!-- <div class="td td-card-title ">
+                    <span class='row-qNumber'></span>
+                </div> -->
+                <div>
+                    <p><span class='row-prompt'></span></p>
+                    <input type="radio" id="qone" name="question" value="a" onclick="answerTest()">
+                    <label for="one"><span class='row-answerA'></span></label><br>
+                    <input type="radio" id="qtwo" name="question" value="b" onclick="answerTest()">
+                    <label for="two"><span class='row-answerB'></label><br>
+                    <input type="radio" id="qthree" name="question" value="c" onclick="answerTest()">
+                    <label for="three"><span class='row-answerC'></label><br>
+                    <input type="radio" id="qfour" name="question" value="d" onclick="answerTest()">
+                    <label for="four"><span class='row-answerD'></label><br>
+                    <input id="nextButton" class="button" type="button" value="Next" onclick="AskQuizQuestions()">
+                    <input id="submitButton" class="button" type="button" value="Grade Quiz" onclick="AskQuizQuestions()">
+                </div>
+                <br>
+              <!--   <div class="td td-card-title">
+                    <span class='row-prompt'></span>
+                </div>
+                <div class="td td-answer">
+                    <span class='row-answerA'></span>
+                </div>
+                <div class="td td-answer">
+                    <span class='row-answerB'></span>
+                </div>
+                <div class="td td-answer">
+                    <span class='row-answerC'></span>
+                </div>
+                <div class="td td-answer">
+                    <span class='row-answerD'></span>
+                </div>
+            </div> -->
+        </template>
+        <div id='output-area' class="content hidden">
+            <div id='row-count'></div>
+            <div class="container">
+                <div id="output-grid" class="table">
+                    <!-- template-header will go here -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

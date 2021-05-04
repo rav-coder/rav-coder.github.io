@@ -1,0 +1,60 @@
+body {
+    background-color: rgba(75, 92, 189, 0.185);
+    background-color: #ecececbe;
+    background-image: url('car.jpg');
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+
+.button {
+    background-color: rgb(75, 92, 189);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: 'Comfortaa', cursive, serif;
+    border-radius: 10px;
+    border-color: rgb(240, 231, 231);
+    box-shadow: 0 8px 16px 0 rgba(223, 215, 215, 0.849);
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 3rem;
+    text-align: center;
+}
+
+.bottomtext {
+    margin-top: 5px;
+    font-size: 60px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(163, 169, 201), rgb(245, 3, 3));
+    background: -webkit-linear-gradient(rgb(190, 87, 87), rgb(92, 118, 168));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    background-color: #ECECEC;
+}
+
+#ct7 {
+    font-size: 20px;
+    text-shadow: 1px 1px rgb(240, 231, 231);
+    background-color: #ECECEC;
+    padding: 10px 20px;
+}
+
+.textTop {
+    background-color: #ECECEC;
+    padding: 40px 80px;
+}
+
+.middle {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

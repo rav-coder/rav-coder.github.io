@@ -1,0 +1,54 @@
+This pogram lets the user search for four different databases. The data sets are listed 
+in the reference secttion. I made an initial html page which lets the user click on a button
+to go to a data set they want to search in. In each data set they can search by 3 fields.
+In the beginning, I had the help message as an innerHTML but that was causing problems where
+the user had to double click to acess some other links in the page, so I changed it to the 
+focus message.
+
+References:
+
+    CPRG 256 SAIT Lecture:
+    - StandarsJSFunctions.js
+    - SearchEmployees.js
+    - SearchEmployees.css
+    - FocusJSFUnctions.js
+    - FocusJS.css
+
+    CSS Flexbox:
+    https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox
+
+    Phone # Substring Match:
+    https://www.tutorialspoint.com/how-to-put-variable-in-regular-expression-match-with-javascript
+
+    Google Font Index Page:
+    https://fonts.google.com/specimen/Open+Sans?preview.text_type=custom
+
+Google Font 2: https://fonts.google.com/specimen/Open+Sans
+
+Data Sets:
+
+    1 Traffic Incidents
+    https://dev.socrata.com/foundry/data.calgary.ca/35ra-9556
+    An archive of traffic incidents within Calgary updated every 10 minutes. Please note there may be gaps in the data due to system or script malfunction. 
+    https://data.calgary.ca/resource/35ra-9556.json
+
+
+    2 Traffic Cameras
+    https://dev.socrata.com/foundry/data.calgary.ca/k7p9-kppz
+    View up-to-the-minute traffic camera images of current road conditions on major routes as well as other key intersections. These cameras are solely for 
+    traffic monitoring and not enforcement. 
+    Camera footage is not recorded. Cameras can be down for maintenance or in the case of collisions, to protect the identity of those involved.
+    https://data.calgary.ca/resource/k7p9-kppz.json
+
+
+    3 Crime Stats
+    https://dev.socrata.com/foundry/data.calgary.ca/848s-4m4z
+    Data is provided monthly by the Calgary Police Service. This includes both crime and disorder statistics.
+    https://data.calgary.ca/resource/848s-4m4z.json
+    
+    
+    4 Building Permits
+    https://data.calgary.ca/resource/c2es-76ed.json
+    Building permit applications made to The City of Calgary's Planning & Development department. 
+    https://dev.socrata.com/foundry/data.calgary.ca/c2es-76ed
+

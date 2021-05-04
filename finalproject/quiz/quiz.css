@@ -1,0 +1,227 @@
+@media all {
+    /* Global */
+    html,
+    body {
+        font-family: Arial;
+        background-color: #ECF1EF;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 20px;
+    }
+    #submitButton {
+        display: none;
+    }
+    .h1 {
+        color: #333333;
+        font-weight: 600;
+        margin: 0;
+    }
+    .p {
+        margin: 0;
+        font-size: 14px;
+        color: #666666;
+        margin-left: 4px;
+        margin-bottom: 24px;
+    }
+    .container {
+        box-sizing: content-box;
+        max-width: 1600px;
+        /* margin: 0 auto; */
+    }
+    .button {
+        height: 35px;
+        width: auto;
+        padding: 0px 20px;
+        background-color: #289DCC;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 4px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .button:disabled,
+    .button[disabled] {
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+    }
+    #finalmessage {
+        margin-bottom: 22px;
+        font-size: 22px;
+    }
+    #finalmessage2 {
+        font-size: 25px;
+        padding: 10px 20px;
+        background-color: #289DCC;
+        color: #FFFFFF;
+    }
+    /* Phone landscape to tablet */
+    /* Table on Desktop | Card on mobile
+   ================================================== */
+    /*
+ * Table class will be our "card wrapper" on mobile
+ * 1. Set position to relative
+ * 2. Set box-sizing to border-box to apply all padding or border inside only
+ * 3. Style
+ */
+    .table {
+        /* 1 */
+        position: relative;
+        /* 2 */
+        box-sizing: border-box;
+        /* 3 */
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    .tbody {
+        display: block;
+    }
+    /* Table row on Desktop | Card body on mobile
+   ================================================== */
+    /*
+ * Table Row will be our "card-body" or main content
+ * 1. Set specific width for DEMO only, I didnt waste my time to create a grid system. Create your OWN
+ * 2. Set overflow hidden to avoid overlap contents
+ * 3. Set display to inline-block to align on right if the the all tr widths fit on the screen size or browser size
+ * 4. Style
+ * 5. Add margin on 2nd child onwards to have some gutter or space
+ */
+    .tbody .tr {
+        /* 1 */
+        width: 300px;
+        /* 2 */
+        overflow: hidden;
+        /* 3 */
+        display: inline-block;
+        /* 4 */
+        position: relative;
+        border-radius: 4px;
+        border: 1px solid #e5e5e5;
+        padding: 12px 24px;
+    }
+    /* 5 */
+    .tbody .tr:not(:first-child) {
+        margin-left: 8px;
+    }
+    /* Thead
+ * Hide on mobile
+   ================================================== */
+    .thead {
+        display: none;
+    }
+    /* Table media 
+ * Is for special-case only when you have some image so if you dont, dont put it
+   ================================================== */
+    .td-media {
+        /* Set dimension */
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 12px;
+    }
+    /*
+ * The image inside of the td-image make it fit to the container so if you have bigger it will scale up, and vice versa
+ */
+    .td-media>img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    /* Card title on mobile
+   ================================================== */
+    /*
+ * 1. Make it display inline-block so if you have more than 1 td for title it will have the same row. else make it block only it will depends on your case
+ * Style
+ */
+    .td.td-card-title {
+        /* 1 */
+        display: inline-block;
+        /* 2 */
+        font-size: 24px;
+        font-weight: 600;
+        color: #333333;
+    }
+    .td.td-position {
+        font-size: 14px;
+        color: #666666;
+    }
+    .td-bio {
+        display: block;
+        margin-top: 12px;
+        color: #666666;
+    }
+    /* Tablet landscape and large */
+    @media screen and (min-width: 960px) {
+        .table {
+            display: table;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+        }
+        .tr {
+            width: auto;
+            display: table-row !important;
+        }
+        .tbody .tr {
+            border-top: 1px solid #e5e5e5!important;
+            border-bottom: none!important;
+            border-left: none !important;
+            border-right: none !important;
+        }
+        .thead {
+            display: table-header-group;
+        }
+        .tbody {
+            display: table-row-group;
+        }
+        .tr {
+            display: table-row;
+        }
+        .th {
+            text-align: left;
+            vertical-align: bottom;
+            font-weight: 600;
+            color: #333333;
+        }
+        .th,
+        .td {
+            padding: 12px 16px;
+            display: table-cell;
+        }
+        .td,
+        .td.td-card-title,
+        .td.td-position {
+            font-weight: 300;
+            font-size: 16px;
+            color: #666666;
+            vertical-align: middle;
+        }
+        .td-media {
+            height: auto;
+            width: 1px;
+        }
+        .td-media>img {
+            width: 100%;
+            height: auto;
+        }
+        .td.td-card-title {
+            display: table-cell;
+        }
+        .td.td-bio {
+            display: none;
+        }
+        .margin-top {
+            margin-top: 0px;
+        }
+    }
+}
+
+
+/* Styles the grid for the quiz questions */
+
+@media all {
+    .possible-answer {
+        font-weight: 800;
+        margin-right: 20px;
+    }
+}
