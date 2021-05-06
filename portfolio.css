@@ -349,7 +349,7 @@ p {
     background-color: #daded4;
     background-color: white;
     border-top: 2px solid rgb(63, 119, 172);
-    border-bottom: 2px solid rgb(63, 119, 172);
+    /* border-bottom: 2px solid rgb(63, 119, 172); */
     font-family: 'Newsreader', serif;
     font-size: 20px;
 }
@@ -373,7 +373,7 @@ p {
     font-size: x-large;
     padding-top: 10px;
     margin-bottom: 30px;
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -433,16 +433,6 @@ hr.inheading {
     margin: 5px 0;
 }
 
-@media screen and (max-width: 1100px) {
-    .column1 {
-        width: 100%;
-        margin: 1px;
-    }
-    .column1 p {
-        margin: 5px 0;
-    }
-}
-
 .list {
     text-align: center;
     margin-bottom: 10px;
@@ -500,19 +490,6 @@ ul li {
     margin-top: 15px;
 }
 
-@media screen and (max-width: 1100px) {
-    .flex-container {
-        display: block;
-    }
-    .flex-item-right,
-    .flex-item-middle,
-    .flex-item-left {
-        padding: 5px;
-        flex: 100%;
-        text-align: center;
-    }
-}
-
 
 /* Contact Me
 -----------------------------------------*/
@@ -526,7 +503,7 @@ footer {
 }
 
 .contactMe h2 {
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .contact-list {
@@ -557,7 +534,18 @@ footer {
 }
 
 .bottom-tab {
-    margin: 30px;
+    margin: 25px;
+}
+
+#triangle {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 30px solid white;
 }
 
 
@@ -593,7 +581,30 @@ footer {
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1100px) {
+    .flex-container {
+        display: block;
+    }
+    .flex-item-right,
+    .flex-item-middle,
+    .flex-item-left {
+        padding: 5px;
+        flex: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .column1 {
+        width: 100%;
+        margin: 1px;
+    }
+    .column1 p {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width:900px) {
     img {
         width: 300px;
         height: 200px;
@@ -643,7 +654,7 @@ footer {
         writing-mode: horizontal-tb;
     }
     a.sidebars {
-        font-size: 8vw;
+        font-size: 5vw;
         color: rgb(63, 119, 172);
         text-align: center;
     }
