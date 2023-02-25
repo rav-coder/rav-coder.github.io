@@ -1,7 +1,5 @@
 # rav-coder.github.io
 
-Portfolio Build V2
+Portfolio Build V3
 
-One-Page Update - May 3,2021.
-
-Old Landing Page
+Langding Page Update - Feb 25,2023.
